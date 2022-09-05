@@ -24,8 +24,8 @@ Restful Api integration and testing. A practical usage of OOP & TDD.
 
 ```bash
 $ npm init -y
-$ npm i express debug winston express-winston cors
-$ npm i --save-dev @types/cors @types/express @types/debug source-map-support tslint typescript
+$ npm i express debug winston express-winston cors shortid
+$ npm i --save-dev @types/cors @types/express @types/debug @types/shortid source-map-support tslint typescript
 $ npm run debug
 ```
 
@@ -38,3 +38,12 @@ script:
 tsconfig:
     - outDir: ./dist
 ```
+
+### Bibliography
+
+- DAOs (Data access objects)
+- DTOs (Data transfer objects)
+
+<!-- Ref
+https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-1
+https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-2 -->

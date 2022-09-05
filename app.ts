@@ -33,7 +33,7 @@ if (!process.env.DEBUG) {
 }
 app.use(expressWinston.logger(loggerOptions));
 // Utils
-const routes: Array<CommonRoutesConfig> = [];
+const routes: CommonRoutesConfig[] = [];
 routes.push(new UserRoutes(app)); // Add the user routes to the array
 
 const defaultPort = process.env.PORT;
