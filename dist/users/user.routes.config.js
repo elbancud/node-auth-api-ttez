@@ -28,16 +28,16 @@ class UserRoutes extends common_routes_config_1.CommonRoutesConfig {
         this.app
             .route('/users/:id')
             .get((req, res) => {
-            res.status(200).send(`GET requested for id ${req.params.userId}`);
+            res.status(200).send(`GET requested for id ${req.params.id}`);
         })
             .post((req, res) => {
-            res.status(200).send(`POST requested for id ${req.params.userId}`);
+            res.status(200).send(`POST requested for id ${req.params.id}`);
         })
             .patch((req, res) => {
-            res.status(200).send(`PATCH requested for id ${req.params.userId}`);
+            res.status(200).send(`PATCH requested for id ${req.params.id}`);
         })
             .delete((req, res) => {
-            res.status(200).send(`DELETE requested for id ${req.params.userId}`);
+            res.status(200).send(`DELETE requested for id ${req.params.id}`);
         });
         return this.app;
     }

@@ -32,16 +32,16 @@ export class UserRoutes extends CommonRoutesConfig {
     this.app
       .route('/users/:id')
       .get((req: express.Request, res: express.Response) => {
-        res.status(200).send(`GET requested for id ${req.params.userId}`);
+        res.status(200).send(`GET requested for id ${req.params.id}`);
       })
       .post((req: express.Request, res: express.Response) => {
-        res.status(200).send(`POST requested for id ${req.params.userId}`);
+        res.status(200).send(`POST requested for id ${req.params.id}`);
       })
       .patch((req: express.Request, res: express.Response) => {
-        res.status(200).send(`PATCH requested for id ${req.params.userId}`);
+        res.status(200).send(`PATCH requested for id ${req.params.id}`);
       })
       .delete((req: express.Request, res: express.Response) => {
-        res.status(200).send(`DELETE requested for id ${req.params.userId}`);
+        res.status(200).send(`DELETE requested for id ${req.params.id}`);
       });
 
     return this.app;

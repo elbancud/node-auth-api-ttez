@@ -36,11 +36,12 @@ app.use(expressWinston.logger(loggerOptions));
 const routes: Array<CommonRoutesConfig> = [];
 routes.push(new UserRoutes(app)); // Add the user routes to the array
 
-const PORT = process.env.PORT;
-server.listen(PORT, () => {
+const defaultPort = process.env.PORT;
+server.listen(defaultPort, () => {
   routes.forEach((route: CommonRoutesConfig) => {
     debugLog(`Routes configured for ${route.name}`);
   });
+  console.log(`Server started ${defaultPort}`);
 });
 
 const debugLog: debug.IDebugger = debug('app');
