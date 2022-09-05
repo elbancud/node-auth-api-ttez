@@ -12,5 +12,7 @@ export abstract class CommonRoutesConfig {
   getName() {
     return this.name;
   }
+  // TODO: Force all routes to have this method, with their own different functionalities.
+  // Contxt: Configure API Endpoints
   abstract configureRoutes(): Express.Application;
 }
