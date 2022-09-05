@@ -13,7 +13,7 @@ Restful Api integration and testing. A practical usage of OOP & TDD.
 - [Express](http://expressjs.com/)
 - [Node JS](https://nodejs.org/en/docs/)
 
-### Depencies breakdown
+### Dependencies breakdown
 
 - [dotenv](https://www.npmjs.com/package/dotenv) - For .env configs
 - [winston](https://www.npmjs.com/package/winston) - For logs alternate for console.log
