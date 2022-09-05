@@ -28,7 +28,6 @@ export class UserRoutes extends CommonRoutesConfig {
           next();
         }
       );
-
     // TODO: After successful pass through the middleware handle specific user via id
     this.app
       .route('/users/:id')
