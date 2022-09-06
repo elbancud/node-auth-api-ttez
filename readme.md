@@ -43,6 +43,7 @@ tsconfig:
 
 - DAOs (Data access objects)
 - DTOs (Data transfer objects)
+- Singleton many contained one instanciating class.
 
 <!-- Ref
 https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-1
