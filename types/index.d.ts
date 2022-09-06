@@ -1,8 +1,8 @@
-interface UserDTO {
+export interface UserDTO {
   id: string;
   email: string;
   firstName: string;
-  lastName: string;
-  password: string;
+  lastName?: string;
+  password?: string;
   permissionLevel?: number;
 }
